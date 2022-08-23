@@ -1,0 +1,1 @@
+Pour le site de charles je vais le déployer à l'aide de github.
