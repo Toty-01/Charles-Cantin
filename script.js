@@ -1,23 +1,46 @@
-const navSlide = () => {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-  const navLinks = document.querySelectorAll('.nav-links li');
+const titreSpans = document.querySelectorAll('h1 span');
+const btns = document.querySelectorAll('.btn-first');
+const logo = document.querySelectorAll('.logo');
+const medias = document.querySelectorAll('.bulle');
+const l1 = document.querySelector('.l1');
+const l2 = document.querySelector('.l2');
 
-  burger.addEventListener('click',()=> {
-      //toggle nav
-      nav.classList.toggle('nav-active');
+window.addEventListener('load', () => {
 
-      //animation of navlinks
-      navLinks.forEach((link, index) => {
-          if (link.style.animation) {
-            link.style.animation = ''
-          } else {
-            link.style.animation = `navlinkFade 2s ease forwards ${index / 8 + 0.5}s`;
-          }
-      });
-      //burger animation
-      burger.classList.toggle('toggle');
-  });
-}
+  const TL = gsap.timeline({paused: true});
 
-navSlide();
+  TL
+  .staggerFrom(titreSpans, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  .staggerFrom(btns, 1, {opacity: 0, ease: "power2.out"}, 0.3, '-=1')
+  .staggerFrom(l1, 1, {width: 0, opacity: 0, ease: "power2.out"}, 0.3,'-=1')
+  .staggerFrom(l2, 0.5, {width: 0, opacity: 0, ease: "power2.out"}, 0.3)
+  .staggerFrom(logo, 1, {transform: "scale(0)", ease: "power2.out"}, 0.3, '-=2')
+  .staggerFrom(medias, 1, {right: -200, ease: "power2.out"}, 0.3, '-=1')
+
+  TL.play();
+
+})
+
+window.addEventListener('hover', () => {
+  
+}) 
+
+
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
