@@ -154,15 +154,6 @@
             return (true);
         }
 
-        // Validaton de l'input VILLE
-        if (fieldName == "city") {
-            if (!validateRequired(input)) {
-                return false;
-            }
-
-            return (true);
-        }
-
         // Validaton de l'input CODE POSTAL
         if (fieldName == "postCode") {
 
@@ -171,6 +162,15 @@
             }
 
             if (!validatePostCode(input)) {
+                return false;
+            }
+
+            return (true);
+        }
+
+        // Validaton de l'input prestation
+        if (fieldName == "prestation") {
+            if (!validateRequired(input)) {
                 return false;
             }
 

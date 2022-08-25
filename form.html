@@ -61,7 +61,10 @@
     <hr class="m-5">
 
   <div class="container d-flex flex-collumn min-vh-100 justify-content-center align-items-center">
-    <form class="row g-3 needs-validation" id="lessonForm" novalidate>
+    <form class="row g-3 needs-validation" id="lessonForm" 
+    action="https://formspree.io/f/mgeqvopy" 
+    method="post"
+    novalidate>
         <div class="col-md-6">
             <label for="firstname" class="form-label">Prénom</label>
             <input type="text" class="form-control" name="firstName" id="firstName">
@@ -108,8 +111,8 @@
             </div>
         </div>
         <div class="col-md-6">
-            <label for="city" class="form-label">Prestation</label>
-            <select class="form-control" name="city" id="city">
+            <label for="prestation" class="form-label">Prestation</label>
+            <select class="form-control" name="prestation" id="prestation">
                 <option selected disabled value="">Choisissez une formule ...</option>
                 <option>Juste moi</option>
                 <option>Pour deux</option>
@@ -119,7 +122,7 @@
                 <option>J'immortalise l'évenement</option>
             </select>
             <div class="invalid-feedback">
-                Veuillez choisir une ville.
+                Veuillez choisir une prestation.
             </div>
         </div>
         <div class="col-12">
