@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Charles-Cantin</title>
 </head>
-<body>
+<body class="main-body">
   <nav class="navbar navbar-expand-sm navbar navbar-dark bg-dark shadow">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img class="nav-logo" src="./pic/icon.jpg" alt="" srcset=""></a>
@@ -27,11 +27,6 @@
           <li class="nav-item text-center">
             <a class="nav-link active" aria-current="page" href="#">
               <i class="fa fa-home"></i> Accueil
-            </a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link" aria-current="page" href="./need-rest.html">
-              <i class="fa fa-home"></i> accueil bis
             </a>
           </li>
           <li class="nav-item dropdown text-center">
@@ -54,22 +49,45 @@
             </a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link" href="./contact.html">
+            <a class="nav-link" href="./form.html">
               <i class="fa fa-phone"></i> Contact
             </a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
-  <h1 class="text-center">Charles Cantin Photographie</h1>
-  <footer>
+  </nav>  <div class="lignes">
+    <div class="l1"></div>
+    <div class="l2"></div>
+ </div>
+
+ <div class="container-first">
+   <h1 class="accueil">
+     <span>Charles</span><span> Cantin</span><span> Photographie</span>
+   </h1>
+   <div class="container-btns">
+     <button class="btn-first b2"><a href="./galerie.html">Galerie</a></button>
+     <button class="btn-first b2"><a href="./prestations.html">Tarifs</a></button>
+     <button class="btn-first b2"><a href="./form.html">Contact</a></button>
+   </div>
+ </div>
+
+ <img class="logo" src="./pic/icon.jpg" alt="logo">
+
+ <ul class="medias">
+   <li class="bulle"><a href="https://www.facebook.com/" target="_blank"><img src="ressources/fb.svg" alt="icone facebook" class="logo-medias"></a></li>
+   <li class="bulle"><a href="https://www.github.com/" target="_blank"><img src="ressources/github.svg" alt="icone github" class="logo-medias"></a></li>
+   <li class="bulle"><a href="https://www.instagram.com/" target="_blank"><img src="ressources/insta.svg" alt="icone instagram" class="logo-medias"></a></li>
+   <li class="bulle"><a href="https://www.youtube.com/" target="_blank"><img src="ressources/yt.svg" alt="icone youtube" class="logo-medias"></a></li>
+ </ul>
+
+  <footer id="accueil">
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
         <li class="page-item active"><a class="page-link" href="#">1</a></li>
         <li class="page-item"><a class="page-link" href="./galerie.html">2</a></li>
         <li class="page-item"><a class="page-link" href="./prestations.html">3</a></li>
-        <li class="page-item"><a class="page-link" href="./contact.html">4</a></li>
+        <li class="page-item"><a class="page-link" href="./form.html">4</a></li>
         <li class="page-item">
           <a class="page-link" href="./galerie.html" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
@@ -78,6 +96,7 @@
       </ul>
     </nav>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="./bootstrap/bootstrap.min.js"></script>
   <script src="script.js"></script>
 </body>

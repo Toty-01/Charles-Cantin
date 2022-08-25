@@ -1,13 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulaire envoyé</title>
-</head>
-<body>
-  <h1>Le formulaire a bien été envoyé</h1>
-  <button><a href="./index.html">revenir à l'accueil</a></button>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./pic/appareil.png" type="image/x-icon">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Charles-Cantin</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar navbar-dark bg-dark shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img class="nav-logo" src="./pic/icon.jpg" alt="" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item text-center">
+              <a class="nav-link" aria-current="page" href="./index.html">
+                <i class="fa fa-home"></i> Accueil
+              </a>
+            </li>
+            <li class="nav-item dropdown text-center">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-camera"></i> Galerie
+              </a>
+              <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="./galerie.html#Mariage">Mariage</a></li>
+                <li><a class="dropdown-item" href="./galerie.html#Grossesse">Grossesse</a></li>
+                <li><a class="dropdown-item" href="./galerie.html#Bébé">Bébé</a></li>
+                <li><a class="dropdown-item" href="./galerie.html#Famille">Famille</a></li>
+                <li><a class="dropdown-item" href="./galerie.html#Baptême">Baptême</a></li>
+                <li><a class="dropdown-item" href="./galerie.html#Couple">Couple</a></li>
+                <li><a class="dropdown-item" href="./galerie.html#Portrait">Portrait</a></li>
+              </ul>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="./prestations.html">
+                <i class="fa-solid fa-euro-sign"></i> Tarifs/Prestations
+              </a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link active" href="#">
+                <i class="fa fa-phone"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1 class="text-center m-5">contact</h1>
+  
+    <hr class="m-5">
+
+  <div class="container d-flex flex-collumn min-vh-100 justify-content-center align-items-center">
+    <form class="row g-3 needs-validation" id="lessonForm" novalidate>
+        <div class="col-md-6">
+            <label for="firstname" class="form-label">Prénom</label>
+            <input type="text" class="form-control" name="firstName" id="firstName">
+            <div class="invalid-feedback">
+                Veuillez saisir votre prénom.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="lastname" class="form-label">Nom</label>
+            <input type="text" class="form-control" name="lastName" id="lastName">
+            <div class="invalid-feedback">
+                Veuillez saisir votre nom.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" name="email" id="email">
+            <div class="invalid-feedback">
+                Veuillez saisir votre e-mail.
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <label for="phoneNumber" class="form-label">Téléphone</label>
+            <input type="email" class="form-control" name="phoneNumber" id="phoneNumber">
+            <div class="invalid-feedback">
+                Veuillez saisir votre numéro de téléphone.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="address" class="form-label">Adresse</label>
+            <input type="email" class="form-control" name="address" id="address">
+            <div class="invalid-feedback">
+                Veuillez saisir votre adresse.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="postcode" class="form-label">Code postal</label>
+            <input type="text" class="form-control" name="postCode" id="postCode">
+            <div class="invalid-feedback">
+                Veuillez saisir votre code postal.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="city" class="form-label">Prestation</label>
+            <select class="form-control" name="city" id="city">
+                <option selected disabled value="">Choisissez une formule ...</option>
+                <option>Juste moi</option>
+                <option>Pour deux</option>
+                <option>Famille</option>
+                <option>Il était une fois</option>
+                <option>Mon bébé</option>
+                <option>J'immortalise l'évenement</option>
+            </select>
+            <div class="invalid-feedback">
+                Veuillez choisir une ville.
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="mb-5 form-check">
+                <input type="checkbox" class="form-check-input" id="conditions" name="conditions">
+                <label class="form-check-label" for="conditions">J'accepte les conditions</label>
+                <div class="invalid-feedback">
+                    Merci de lire les conditions avant de valider le formulaire.
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-25 m-3">Valider</button>
+    </form>
+</div>
+<hr class="m-5">
+
+<footer>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center m-5">
+      <li class="page-item">
+        <a class="page-link" href="./index.html" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="./index.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="./galerie.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="./prestations.html">3</a></li>
+      <li class="page-item active"><a class="page-link" href="#">4</a></li>
+    </ul>
+  </nav>
+</footer>
+<script src="./bootstrap/bootstrap.js"></script>
+<script src="form.js"></script>
 </body>
 </html>
