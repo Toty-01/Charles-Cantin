@@ -265,3 +265,6 @@ document.getElementById("search").addEventListener("click", () => {
 window.onload = () => {
   filterProduct("all");
 };
+
+
+AOS.init();

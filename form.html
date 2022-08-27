@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./pic/appareil.png" type="image/x-icon">
     <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./aos/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,6 +34,7 @@
                 <i class="fa-solid fa-camera"></i> Galerie
               </a>
               <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="./galerie.html">Galerie</a></li>
                 <li><a class="dropdown-item" href="./galerie.html#Mariage">Mariage</a></li>
                 <li><a class="dropdown-item" href="./galerie.html#Grossesse">Grossesse</a></li>
                 <li><a class="dropdown-item" href="./galerie.html#Bébé">Bébé</a></li>
@@ -60,95 +62,130 @@
   
     <hr class="m-5">
 
-    <h2 class="contact-h2">Laissez moi vos coordonnées et je vous recontacterais dans les plus bref délais</h2>
+    <h2>Mes coordonnées</h2>
+
+    <div class="content">
+        <div class="com-ancre">   
+              <h3 class="text-center"><i class="fa fa-envelope" aria-hidden="true"></i> E-mail :</h3> 
+                <p class="text-center" id="text1">Charles-Cantin-photo@gmoule.coum</p>
+                <div class="form-btns text-center">
+                  <a href="#lessonForm"><button type="button" class="btn btn-primary">Envoyer un mail</button></a>
+                </div>
+                <div class="form-btns text-center">
+                  <button  type="button" class="btn btn-primary" onclick="copy('text1')"><a>Copier le mail</a></button>
+                </div>
+                <h3 class="text-center"><i class="fa fa-phone"></i> telephone :</h3><p class="text-center" id="text2">06 22 33 44 55</p>
+                <div class="form-btns text-center">
+                  <button  type="button" class="btn btn-primary" onclick="copy('text2')"><a>Copier numero</a></button>
+                </div>
+                <h3 class="text-center"><i class='fab fa-facebook-f'></i> Facebook</h3>
+                <div class="form-btns text-center">
+                  <a href="https://www.facebook.com" target="_blank"><button type="button" class="btn btn-primary">Lien facebook</button></a>
+                </div>
+                <p id="alert">Text Copied!</p>
+         </div>
+    </div>
 
     <hr class="m-5">
 
+    <div class="aos-item"
+    data-aos="fade-up"
+    data-aos-offset="0"
+    data-aos-delay="50"
+    data-aos-duration="2000"
+    data-aos-easing="ease-in-out">
 
-  <div class="container d-flex flex-collumn min-vh-100 justify-content-center align-items-center">
-    <form class="row g-3 needs-validation" id="lessonForm" 
-    action="https://formspree.io/f/mgeqvopy" 
-    method="post"
-    novalidate>
-        <div class="col-md-6">
-            <label for="firstname" class="form-label">Prénom</label>
-            <input type="text" class="form-control" name="firstName" id="firstName">
-            <div class="invalid-feedback">
-                Veuillez saisir votre prénom.
-            </div>
-        </div>
+    <h2>Formulaire</h2>
 
-        <div class="col-md-6">
-            <label for="lastname" class="form-label">Nom</label>
-            <input type="text" class="form-control" name="lastName" id="lastName">
-            <div class="invalid-feedback">
-                Veuillez saisir votre nom.
-            </div>
-        </div>
+    <h2 class="contact-h2">Laissez moi vos coordonnées et je vous recontacterais dans les plus bref délais</h2>
 
-        <div class="col-md-6">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" name="email" id="email">
-            <div class="invalid-feedback">
-                Veuillez saisir votre e-mail.
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <label for="phoneNumber" class="form-label">Téléphone</label>
-            <input type="email" class="form-control" name="phoneNumber" id="phoneNumber">
-            <div class="invalid-feedback">
-                Veuillez saisir votre numéro de téléphone.
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label for="address" class="form-label">Adresse</label>
-            <input type="email" class="form-control" name="address" id="address">
-            <div class="invalid-feedback">
-                Veuillez saisir votre adresse.
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label for="postcode" class="form-label">Code postal</label>
-            <input type="text" class="form-control" name="postCode" id="postCode">
-            <div class="invalid-feedback">
-                Veuillez saisir votre code postal.
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label for="prestation" class="form-label">Prestation</label>
-            <select class="form-control" name="prestation" id="prestation">
-                <option selected disabled value="">Choisissez une formule ...</option>
-                <option>Juste moi</option>
-                <option>Pour deux</option>
-                <option>Famille</option>
-                <option>Il était une fois</option>
-                <option>Mon bébé</option>
-                <option>J'immortalise l'évenement</option>
-            </select>
-            <div class="invalid-feedback">
-                Veuillez choisir une prestation.
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="mb-5 form-check">
-                <input type="checkbox" class="form-check-input" id="conditions" name="conditions">
-                <label class="form-check-label" for="conditions">J'accepte les conditions</label>
+
+      <div class="container d-flex flex-collumn min-vh-100 justify-content-center align-items-center">
+        <form class="row g-3 needs-validation" id="lessonForm" 
+        action="https://formspree.io/f/mgeqvopy" 
+        method="post"
+        novalidate>
+            <div class="col-md-6">
+                <label for="firstname" class="form-label">Prénom</label>
+                <input type="text" class="form-control" name="firstName" id="firstName">
                 <div class="invalid-feedback">
-                    Merci de lire les conditions avant de valider le formulaire.
+                    Veuillez saisir votre prénom.
                 </div>
             </div>
-        </div>
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary w-25 m-3">Valider</button>
-        </div>
-    </form>
-</div>
+
+            <div class="col-md-6">
+                <label for="lastname" class="form-label">Nom</label>
+                <input type="text" class="form-control" name="lastName" id="lastName">
+                <div class="invalid-feedback">
+                    Veuillez saisir votre nom.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" name="email" id="email">
+                <div class="invalid-feedback">
+                    Veuillez saisir votre e-mail.
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <label for="phoneNumber" class="form-label">Téléphone</label>
+                <input type="email" class="form-control" name="phoneNumber" id="phoneNumber">
+                <div class="invalid-feedback">
+                    Veuillez saisir votre numéro de téléphone.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="address" class="form-label">Adresse</label>
+                <input type="email" class="form-control" name="address" id="address">
+                <div class="invalid-feedback">
+                    Veuillez saisir votre adresse.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="postcode" class="form-label">Code postal</label>
+                <input type="text" class="form-control" name="postCode" id="postCode">
+                <div class="invalid-feedback">
+                    Veuillez saisir votre code postal.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="prestation" class="form-label">Prestation</label>
+                <select class="form-control" name="prestation" id="prestation">
+                    <option selected disabled value="">Choisissez une formule ...</option>
+                    <option>Juste moi - 130 €</option>
+                    <option>Pour deux - 195 €</option>
+                    <option>Famille - 220 €</option>
+                    <option>Il était une fois - 160 €</option>
+                    <option>Mon bébé - 100€</option>
+                    <option>J'immortalise l'évenement - Sur mesure</option>
+                </select>
+                <div class="invalid-feedback">
+                    Veuillez choisir une prestation.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="m-5 form-check">
+                    <input type="checkbox" class="form-check-input" id="conditions" name="conditions">
+                    <label class="form-check-label" for="conditions">J'accepte les conditions</label>
+                    <div class="invalid-feedback">
+                        Merci de lire les conditions avant de valider le formulaire.
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary w-25 m-3">Valider</button>
+            </div>
+        </form>
+      </div>
+    </div>
+
 <hr class="m-5">
 
 <footer>
   <nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-center m-5">
+    <ul class="pagination justify-content-center mt-5">
       <li class="page-item">
         <a class="page-link" href="./index.html" aria-label="Previous">
           <span aria-hidden="true">&laquo;</span>
@@ -159,9 +196,11 @@
       <li class="page-item"><a class="page-link" href="./prestations.html">3</a></li>
       <li class="page-item active"><a class="page-link" href="#">4</a></li>
     </ul>
+    <p class="text-center mb-5">© Cauche Anthony</p>
   </nav>
 </footer>
 <script src="./bootstrap/bootstrap.js"></script>
+<script src="./aos/aos.js"></script>
 <script src="form.js"></script>
 </body>
 </html>
