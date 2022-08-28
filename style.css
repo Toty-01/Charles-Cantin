@@ -44,6 +44,20 @@ h2 {
 .page-item.active > a {
   cursor: default;
 }
+.reseaux {
+  display: flex;
+  margin-top: 4rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.reseaux li {
+  list-style: none;
+}
+.reseaux > li:hover {
+  transform: scale(1.06);
+}
+
 /*---------------------Accueil--------------------------*/
 
 .container-first {
@@ -184,6 +198,7 @@ h1.accueil span {
 /*----------------------galerie---------------------------*/
 .gal-nav {
   margin-left: 40%;
+  padding-bottom: 2rem;
 }
 .gal-nav ul {
   width: 1px;
@@ -218,8 +233,10 @@ h1.accueil span {
   margin-bottom: 10rem;
   text-shadow: 2px 3px grey;
 }
-h2.m-5 {
+h2.m-5.title {
   text-shadow: 2px 2px grey;
+  margin-top: 0 !important;
+  padding-top: 4rem;
 }
 .carousel {
   max-width: 700px;
@@ -331,12 +348,32 @@ h2.m-5 {
 #tarifs {
   font-size: 3rem;
   font-weight: 700;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   text-shadow: 2px 2px grey;
 }
 .tarif-h2 {
   font-size: 2.3rem;
+  margin-top: 0;
+  padding-top: 4rem;
+}
+.tarif-h2 ~ p {
+  font-size: 1.3rem;
+}
+.tarif-h2 + p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.tarif-bg {
+  background-image: url('./pic/flower.png');
+  background-size: cover;
+  background-position: 60%;
+}
+th.m-5.tarif {
+  margin-bottom: 0;
+}
+.tarif-sep {
+  margin: 0;
 }
 /*---------------------------contact-------------------------------------*/
 
@@ -364,7 +401,7 @@ h2.m-5 {
   margin: auto;
   left: 0;
   right: 0;
-  bottom: -27vh;
+  bottom: -20vh;
   padding: 5px 0;
   display: none;
 }
@@ -386,6 +423,9 @@ h2.m-5 {
 }
 .form-btns > button > a {
   text-decoration: none;
+}
+.form-check-input {
+  border: 3px solid black;
 }
 
 
