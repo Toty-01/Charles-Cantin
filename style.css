@@ -409,10 +409,9 @@ h2.m-5.title {
   font-size: 1.5rem;
   font-weight: 700;
 }
-
 .timeline {
   border-top: 3px solid;
-  border-image: linear-gradient(to right, #2343f9, #5f5f5f);
+  border-image: linear-gradient(to right, #9b9b9b, #2e4afe);
   border-image-slice: 1;
   padding-bottom: 2rem;
   position: relative;
@@ -420,7 +419,7 @@ h2.m-5.title {
 }
 .timeline:nth-child(1):after {
   content: '▲';
-  color: #4e6cff;
+  color: #60783c;
   position: absolute;
   top: -10px;
   right: -8.5px;
