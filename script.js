@@ -25,3 +25,6 @@ window.addEventListener('hover', () => {
   
 }) 
 
+
+AOS.init();
+

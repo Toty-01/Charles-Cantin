@@ -57,7 +57,9 @@ h2 {
 .reseaux > li:hover {
   transform: scale(1.06);
 }
-
+#accueil p {
+  color: whitesmoke;
+}
 /*---------------------Accueil--------------------------*/
 
 .container-first {
@@ -199,6 +201,41 @@ h1.accueil span {
 .gal-nav {
   margin-left: 40%;
   padding-bottom: 2rem;
+}
+.ap-left  {
+  width: 80px;
+  margin-top: 15px;
+  margin-bottom: 4rem;
+  animation: pic-anim-left 6s ease-in-out infinite;
+}
+.ap-right {
+  width: 80px;
+  margin-top: 15px;
+  margin-bottom: 4rem;
+  float: right;
+  animation: pic-anim-right 6s ease-in-out infinite;
+}
+@keyframes pic-anim-left {
+  0% {
+    transform: rotate(270deg);
+  }
+  50% {
+    transform: translateX(75vw);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+@keyframes pic-anim-right {
+  0% {
+    transform: rotate(-270deg);
+  }
+  50% {
+    transform: translateX(-75vw);
+  }
+  100% {
+    transform: rotate(-270deg);
+  }
 }
 .gal-nav ul {
   width: 1px;
@@ -348,9 +385,17 @@ h2.m-5.title {
 #tarifs {
   font-size: 3rem;
   font-weight: 700;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
   text-shadow: 2px 2px grey;
+}
+.header-tarif-img {
+  width: 100%;
+  max-height: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  margin-bottom: 4rem;
 }
 .tarif-h2 {
   font-size: 2.3rem;
@@ -363,6 +408,44 @@ h2.m-5.title {
 .tarif-h2 + p {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.timeline {
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #2343f9, #5f5f5f);
+  border-image-slice: 1;
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 800;
+}
+.timeline:nth-child(1):after {
+  content: '▲';
+  color: #4e6cff;
+  position: absolute;
+  top: -10px;
+  right: -8.5px;
+  box-sizing: content-box !important;
+}
+.timeline:nth-child(1) {
+  border-bottom: 3px solid;
+  border-top: none;
+  width: 85%;
+}
+.timeline:nth-child(2) {
+  border-top: none;
+  margin-left: 8%;
+}
+.timeline:nth-child(odd) {
+  border-right: 3px solid;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-left: 0;
+}
+.timeline:nth-child(even) {
+  border-left: 3px solid;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-right: 0;
 }
 .tarif-bg {
   background-image: url('./pic/flower.png');
@@ -382,6 +465,39 @@ th.m-5.tarif {
   margin-top: 6rem;
   margin-bottom: 6rem;
   text-shadow: 2px 2px grey;
+}
+.contact-left  {
+  width: 80px;
+  margin-top: 15px;
+  margin-bottom: 4rem;
+  animation: anim-left 6s ease-in-out infinite;
+}
+.contact-right {
+  width: 80px;
+  margin-top: 15px;
+  margin-bottom: 4rem;
+  float: right;
+  transform: rotate(260deg);
+  animation: anim-right 6s ease-in-out infinite;
+}
+@keyframes anim-left {
+  50% {
+    transform: translateX(75vw) rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes anim-right {
+  0% {
+    transform: rotate(-130deg);
+  }
+  50% {
+    transform: translateX(-75vw);
+  }
+  100% {
+    transform: rotate(-130deg);
+  }
 }
 .contact-h2 {
   font-size: 1.5rem;
