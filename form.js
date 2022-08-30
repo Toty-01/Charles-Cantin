@@ -203,7 +203,7 @@ function copy(copyId){
     document.getElementById("alert").style.display = "block";
     setTimeout(function(){
         document.getElementById("alert").style.display = "none";
-    }, 1000);
+    }, 2000);
 }
 
 

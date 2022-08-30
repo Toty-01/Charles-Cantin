@@ -314,11 +314,11 @@ h2.m-5.title {
   border-bottom-color: #6759ff;
 }
 #search-container button {
-  padding: 1em 2em;
+  padding: 0.8em 1.2em;
   margin-left: 1em;
   background-color: #0051ff;
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-top: 0.5em;
   box-shadow: 2px 2px grey;
 }
@@ -516,13 +516,10 @@ th.m-5.tarif {
   text-align: center;
   background-color: #202020;
   color: #ffffff;
-  position: absolute;
+  position: relative;
   margin: auto;
-  left: 0;
-  right: 0;
-  bottom: -20vh;
-  padding: 5px 0;
   display: none;
+  margin-bottom: 1rem;
 }
 .com-ancre > p {
     font-size: 1.7rem;
@@ -604,14 +601,15 @@ th.m-5.tarif {
   .container-first {
     position: relative;
     width: 85%;
-    top: 20%;
+    top: 24%;
     left: 5%; 
   }
   h1.accueil {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: fit-content;
-    font-size: 2.1rem;
+    font-size: 2.2rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
@@ -623,12 +621,12 @@ th.m-5.tarif {
   }
   .logo {
     position: relative;
-    top: -25rem;
+    top: -23rem;
     left: 15rem;
     width: 6rem;
   }
   .bulle {
-    bottom: 16rem;
+    bottom: 14rem;
     left: 2rem;
   }
   .lignes {
@@ -665,7 +663,7 @@ th.m-5.tarif {
   }
   #accueil {
     position: relative;
-    bottom: -15rem;
+    bottom: -16rem;
     padding-bottom: 2rem;
   }
   #accueil > nav > ul > li > a {
