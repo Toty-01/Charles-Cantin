@@ -354,6 +354,8 @@ h2.m-5.title {
   max-width: 28rem;
   margin-top: 1em;
   padding: 0.2rem;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
   box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
 }
@@ -469,6 +471,7 @@ th.m-5.tarif {
   width: 80px;
   margin-top: 15px;
   margin-bottom: 4rem;
+  margin-left: 2rem;
   animation: anim-left 6s ease-in-out infinite;
 }
 .contact-right {
@@ -476,12 +479,13 @@ th.m-5.tarif {
   margin-top: 15px;
   margin-bottom: 4rem;
   float: right;
+  margin-right: 2rem;
   transform: rotate(260deg);
   animation: anim-right 6s ease-in-out infinite;
 }
 @keyframes anim-left {
   50% {
-    transform: translateX(75vw) rotate(-90deg);
+    transform: translateX(60vw) rotate(-90deg);
   }
   100% {
     transform: rotate(0deg);
@@ -492,7 +496,7 @@ th.m-5.tarif {
     transform: rotate(-130deg);
   }
   50% {
-    transform: translateX(-75vw);
+    transform: translateX(-60vw);
   }
   100% {
     transform: rotate(-130deg);
@@ -542,7 +546,6 @@ th.m-5.tarif {
 .form-check-input {
   border: 3px solid black;
 }
-
 
 /*----------------------------Responsive-----------------------------------*/
 @media screen and (max-width:1300px) {
