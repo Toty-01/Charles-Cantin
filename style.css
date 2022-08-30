@@ -623,7 +623,7 @@ th.m-5.tarif {
     background: black;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background: url('./pic/bg.jpg') no-repeat fixed 42%;
+    background: url('./pic/bg.jpg') repeat 42%;
     background-size: cover;
     position: relative;
     overflow-x: hidden;
@@ -633,7 +633,7 @@ th.m-5.tarif {
     position: relative;
     right: -2rem;
     flex-direction: row;
-    top: 36vh;
+    top: 16rem;
   }
   .container-btns {
     width: auto;
