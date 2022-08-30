@@ -546,9 +546,6 @@ th.m-5.tarif {
 
 /*----------------------------Responsive-----------------------------------*/
 @media screen and (max-width:1300px) {
-  .main-body {
-    height: 105vh;
-  }
   h1.accueil {
     font-size: 5rem;
   }
@@ -575,6 +572,17 @@ th.m-5.tarif {
   .card {
     max-width: 16rem;
   }
+  h1.accueil {
+    font-size: 4rem;
+  }
+  .btn-first {
+    font-size: 2rem;
+    width: 150px;
+    margin-top: 0.1rem;
+  }
+  .container-first {
+    top: 34%;
+  }
 }
 @media screen and (max-width: 720px) {
   .card.bébé img, .card.famille img, .card.grossesse img, .card.baptême img,.card.mariage img, .card.couple img, .card.portrait img {
@@ -589,15 +597,6 @@ th.m-5.tarif {
   }
 }
 @media screen and (max-width:500px) {
-  .main-body {
-    background: black;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-    background: url('./pic/bg.jpg') no-repeat fixed 42% 25%;
-    background-size: cover;
-    position: relative;
-    overflow-x: hidden;
-  }
   .lignes {
     position: relative;
     top: 8%;
@@ -620,12 +619,43 @@ th.m-5.tarif {
     transform: rotate(0deg);
     transform: translateX(80px);
   }
+  .main-body {
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: url('./pic/bg.jpg') no-repeat fixed 42%;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .medias {
+    overflow: hidden;
+    position: relative;
+    right: -2rem;
+    flex-direction: row;
+    top: 36vh;
+  }
+  .container-btns {
+    width: auto;
+    margin: 0;
+    display: block;
+  }
+  .btn-first {
+    font-size: 1.5rem;
+    width: 70%;
+    margin-top: 0.1rem;
+    margin-left: 15%;
+    padding: 6px;
+  }
+  footer {
+    padding-bottom: 2px;
+  }
   .container-first {
     position: relative;
     margin-left: -3rem;
     padding: 0;
     width: 99%;
-    top: 28%;
+    top: 22%;
   }
   h1.accueil {
     display: flex;
@@ -641,47 +671,13 @@ th.m-5.tarif {
     top: -18rem;
     width: 6rem;
   }
-  .medias {
-    overflow: hidden;
-    position: relative;
-    right: -2rem;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 9rem;
-  }
-  .container-btns {
-    width: auto;
-    margin: 0;
-    display: block;
-  }
-  .btn-first {
-    font-size: 1.5rem;
-    width: 70%;
-    margin-top: 0.1rem;
-    margin-left: 15%;
-    padding: 6px;
-  }
   #accueil {
     position: relative;
-    bottom: -15rem;
+    bottom: -13rem;
   }
-  #accueil > nav > ul > li > a {
-    background-color: #e3e3e3;
-    border: 1px solid #adadad;
-    color: #000000;
-  }
-  #accueil > nav > ul > li.active > a {
-    background-color: #2a2a2a;
-    color: #000000;
-  }
-  #accueil > nav > ul > li > a:hover {
-    background-color: #1a202f;
-  }
-  #accueil > nav > ul > li.active > a:hover {
-    background-color: #2a2a2a;
-    color: #000000;
-    cursor: default;
+  .gal-nav {
+    margin-left: 6%;
+    padding: 6px;
   }
   .card.bébé img, .card.famille img, .card.grossesse img, .card.baptême img,.card.mariage img, .card.couple img, .card.portrait img {
     height: 24rem;

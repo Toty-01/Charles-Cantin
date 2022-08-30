@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
   .staggerFrom(l1, 1, {width: 0, opacity: 0, ease: "power2.out"}, 0.6,'-=1')
   .staggerFrom(l2, 0.5, {width: 0, opacity: 0, ease: "power2.out"}, 0.6)
   .staggerFrom(logo, 1, {transform: "scale(0)", ease: "power2.out"}, 0.6, '-=2')
-  .staggerFrom(medias, 1, {right: -200, ease: "power2.out"}, 0.6, '-=1')
+  .staggerFrom(medias, 1, {right: -400, ease: "power2.out"}, 0.6, '-=1')
 
   TL.play();
 
