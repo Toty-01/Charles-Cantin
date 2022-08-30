@@ -598,37 +598,6 @@ th.m-5.tarif {
     position: relative;
     overflow-x: hidden;
   }
-  .container-first {
-    position: relative;
-    width: 85%;
-    top: 24%;
-    left: 5%; 
-  }
-  h1.accueil {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    font-size: 2.2rem;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-  }
-  .medias {
-    position: relative;
-    right: 3rem;
-    transform: translateY(-50%);
-    flex-direction: row;
-  }
-  .logo {
-    position: relative;
-    top: -23rem;
-    left: 15rem;
-    width: 6rem;
-  }
-  .bulle {
-    bottom: 14rem;
-    left: 2rem;
-  }
   .lignes {
     position: relative;
     top: 8%;
@@ -651,20 +620,51 @@ th.m-5.tarif {
     transform: rotate(0deg);
     transform: translateX(80px);
   }
-  .btn-first {
-    font-size: 2rem;
-    width: 300px;
-    margin-left: 1rem;
-    margin-top: 0.1rem;
-    padding: 10px;
+  .container-first {
+    position: relative;
+    margin-left: -3rem;
+    padding: 0;
+    width: 99%;
+    top: 28%;
   }
-  .gal-nav {
-    margin-left: 0;
+  h1.accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+  }
+  .logo {
+    position: relative;
+    float: right;
+    top: -18rem;
+    width: 6rem;
+  }
+  .medias {
+    overflow: hidden;
+    position: relative;
+    right: -2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 9rem;
+  }
+  .container-btns {
+    width: auto;
+    margin: 0;
+    display: block;
+  }
+  .btn-first {
+    font-size: 1.5rem;
+    width: 70%;
+    margin-top: 0.1rem;
+    margin-left: 15%;
+    padding: 6px;
   }
   #accueil {
     position: relative;
-    bottom: -16rem;
-    padding-bottom: 2rem;
+    bottom: -15rem;
   }
   #accueil > nav > ul > li > a {
     background-color: #e3e3e3;
