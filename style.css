@@ -55,6 +55,7 @@ h2 {
   list-style: none;
 }
 .reseaux > li:hover {
+  transition: all 1.2s;
   transform: scale(1.06);
 }
 #accueil p {
