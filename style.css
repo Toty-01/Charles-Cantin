@@ -62,7 +62,6 @@ h2 {
   color: whitesmoke;
 }
 /*---------------------Accueil--------------------------*/
-
 .container-first {
   position: absolute;
   top: 29%;
@@ -89,6 +88,7 @@ h1.accueil span {
 .container-btns {
   position: relative;
   top: 50px;
+  margin-top: 4rem;
 }
 .btn-first {
   border: 2px solid #f1f1f1;
@@ -152,16 +152,17 @@ h1.accueil span {
   list-style-type: none;
   position: absolute;
   right: 8%;
-  top: 65%;
+  top: 60%;
   transform: translateY(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 .bulle {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   border: 1px solid #f1f1f1;
   display: flex;
@@ -174,7 +175,7 @@ h1.accueil span {
   transition: all 0.6s ease-in-out;
 }
 .bulle:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 #accueil {
   position: relative;
@@ -597,7 +598,7 @@ th.m-5.tarif {
     grid-column-gap: 1em;
   }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
   .lignes {
     position: relative;
     top: 8%;
@@ -634,7 +635,11 @@ th.m-5.tarif {
     position: relative;
     right: -2rem;
     flex-direction: row;
-    top: 16rem;
+    top: 17rem;
+  }
+  .bulle {
+    width: 60px;
+    height: 60px;
   }
   .container-btns {
     width: auto;
