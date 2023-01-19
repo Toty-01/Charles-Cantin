@@ -1,1 +1,1 @@
-Pour le site de charles je vais le déployer à l'aide de github.
+Pour le site de charles cantin je vais le déployer à l'aide de github. 
