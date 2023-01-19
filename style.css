@@ -353,6 +353,7 @@ h2.m-5.title {
   padding: 2em 0;
   align-items: center;
 }
+
 .card {
   background-color: #ffffff;
   max-width: 28rem;
@@ -597,7 +598,7 @@ th.m-5.tarif {
   .card {
     max-width: 12rem;
   }
-  #products {
+  #cards {
     grid-template-columns: auto auto;
     grid-column-gap: 1em;
   }
@@ -692,7 +693,7 @@ th.m-5.tarif {
   .card.bébé img, .card.famille img, .card.grossesse img, .card.baptême img,.card.mariage img, .card.couple img, .card.portrait img {
     height: 24rem;
   }
-  #products {
+  #cards {
     grid-template-columns: auto;
   }
   .card {

@@ -201,7 +201,7 @@ for (let i of cards.data) {
   document.getElementById("cards").appendChild(card);
 
   let name = document.createElement("h6");
-  name.classList.add("product-name");
+  name.classList.add("card-name");
   name.innerText = i.cardDesc.toUpperCase();
   container.appendChild(name);
 }
@@ -229,7 +229,7 @@ function filterProduct(value) {
 }
 document.getElementById("search").addEventListener("click", () => {
   let searchInput = document.getElementById("search-input").value;
-  let elements = document.querySelectorAll(".product-name");
+  let elements = document.querySelectorAll(".card-name");
   let cards = document.querySelectorAll(".card");
   
   elements.forEach((element, index) => {
