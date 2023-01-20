@@ -353,7 +353,6 @@ h2.m-5.title {
   padding: 2em 0;
   align-items: center;
 }
-
 .card {
   background-color: #ffffff;
   max-width: 28rem;
@@ -378,7 +377,7 @@ h2.m-5.title {
   text-align: center;
 }
 .container h5 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1rem;
   margin-bottom: 0;
 }
